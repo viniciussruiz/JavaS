@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - JS</title>
+    <style>
+        body{ 
+            background-color: rgb(54, 54, 241);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 20pt;
+
+        }
+    </style>
+</head>
+<body> 
+    <h1>Olá, Mundo!</h1>
+    <p>Fora da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('digite um número')) //pront é valor string
+        var n2 = Number(window.prompt('digite outro número')) //pront é valor string
+        var s = n1 + n2
+        window.alert(' a soma dos valores é, ' + s)
+
+        // poderia ser window.alert(` A soma entre ${n1} e %{n2} é igual a ${s}`)
+        // + pode ser adição ou concatenação. 
+        // se for (number + number) adição.
+        // se for (string + string) é concatenação.
+        // para realizar a conversão tem que usar Number.parseInt(n) - numeros inteiros
+        // para realizar a conversão tem que usar Number.parseFloat(n) - numero real /quebrados tipo 0.5 
+        // posso utilizar apenas "Number" é o JavaScript decide como fará a soma.
+        // conversão de numeros em string utilizar : String(n) ou n.toString()
+
+    </script>
+</body>
+</html>
