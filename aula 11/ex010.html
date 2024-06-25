@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua escolha</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1> Responda a questão abaixo:</h1>
+    <p>Se eu cozinho 1kg de feijão <br>
+    seu cuzinho é meu?</p>
+    <input type="button" value="Sim" onclick="sim()">
+    <input type="button" value="Não" onclick="não()">
+    <script>
+        window.alert ('Pronta para o desafio?')
+        function sim(){
+            window.alert ('Resposta certa bebe!')
+        }
+        function não(){window.alert (' Resposta errada, mas é meu do mesmo jeito!')
+    }
+    </script>
+</body>
+</html>
