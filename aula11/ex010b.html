@@ -24,7 +24,7 @@
     seu cuzinho é meu?</p>
     
     <label for="ires"> Resposta</label> 
-        <input type="text" name="res" id="ires" placeholder=" Digite: sim ou não">
+        <input type="text" name="res" id="ires" placeholder=" Digite: Sim ou Não">
         <input type="button" value="Verificar" onclick="questao()">
         <div id="ori">
 
@@ -38,9 +38,8 @@
             var ori = window.document.querySelector ('div#ori')
             var cor = (res.value)
             ori.innerHTML = `<p> Sua resposta foi ${cor}`
-                if (cor == "sim") {
-            ori.innerHTML += 'Correta Respota! é meu mesmo. S2'}
-
+                if (cor == "Sim") {
+            ori.innerHTML = 'Correta Respota! é meu mesmo. S2'}
             else { 
             ori.innerHTML += 'Você está <strong>DOIDA?</strong> é meu sim! Volta tudo e faz de novo!'}
            
