@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua escolha</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1> Responda a questão abaixo:</h1>
+    <p>Se eu cozinho 1kg de feijão <br>
+    seu cuzinho é meu?</p>
+    
+    <label for="ires"> Resposta</label> 
+        <input type="text" name="res" id="ires" placeholder=" Digite: 1 p/ sim ou 2 p/ não">
+        <input type="button" value="Verificar" onclick="questao()">
+        <div id="ori">
+
+        </div>
+
+    <script>
+        window.alert ('Pronta para o desafio?')
+        
+        function questao() {
+            var res = window.document.querySelector('input#ires')
+            var ori = window.document.querySelector ('div#ori')
+            var cor = (res.value)
+            ori.innerHTML = `<p> Sua resposta foi ${cor}`
+                if (cor == "sim") {
+            ori.innerHTML += 'Correta Respota! é meu mesmo. S2'}
+
+            else { 
+            ori.innerHTML += 'Você está <strong>DOIDA?</strong> é meu sim! Volta tudo e faz de novo!'}
+           
+    }
+        
+    </script>
+</body>
+</html>
